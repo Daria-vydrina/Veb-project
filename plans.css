@@ -1,0 +1,278 @@
+:root{
+  --td-text-margin: 10px;
+  --line-height: 24px;
+  --margin: 7px;
+  --margin-top: 12px;
+  --td-height: 100px;
+  --month-height: 48px;
+  --body-width: 1440px;
+  --main-left-right-margin: 51px;
+  --table-width: calc(var(--body-width) - var(--main-left-right-margin)*2);
+}
+
+.main_content>h2{
+    margin-bottom: 50px !important;
+    margin-left: 79px !important;
+}
+
+.main_content{
+    margin: 50px 51px 0 !important;
+}
+
+.add{
+  cursor: pointer;
+  border: 0px;
+  padding: 0 !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: var(--margin) var(--margin) 0 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
+
+table {
+  clear: both;
+  width: 100%;
+  /* border: 1px solid #000000; */
+  border-radius: 10px;
+  border-collapse: collapse;
+  color: #444;
+}
+td {
+  height: var(--td-height) !important;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #000000;
+  /* border-top: 1px solid #000000; */
+  width: calc(var(--table-width)/7);
+  background-color: #D9D9D9;
+}
+td.not-current {
+  color: #c0c0c0;
+}
+td.today {
+  font-weight: 700;
+  color: #28283b;
+}
+thead{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+tr{
+  border-radius: 10px;
+}
+
+thead td {
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  background-color: #6D6D6D;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: var(--month-height) !important;
+}
+
+.days > td{
+  height: var(--month-height) !important;
+}
+
+#btnPrev {
+  float: left;
+  margin-bottom: 20px;
+}
+#btnPrev:before {
+  font-family: FontAwesome;
+  padding-right: 4px;
+}
+#btnNext {
+  float: right;
+  margin-bottom: 20px;
+}
+#btnNext:after {
+  font-family: FontAwesome;
+  padding-left: 4px;
+}
+#btnPrev,
+#btnNext {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #c0c0c0;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+#btnPrev:hover,
+#btnNext:hover {
+  color: #28283b;
+  font-weight: bold;
+}
+
+.day{
+  margin: var(--margin) 0 0 var(--margin);
+}
+
+.modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+.modal_wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: auto;
+  height:auto;
+}
+
+.modal_body{
+  display: flex;
+  margin: 0 50px 50px 50px;
+}
+
+.modal_wrapper > header{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.modal_header{
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.modal_header>span {
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+
+.field {
+  margin-bottom: 30px;
+  outline: 0px;
+}
+
+form > .field:last-child{
+  margin: 0;
+}
+
+textarea{
+  margin-top: 10px;
+}
+
+.datetime{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.for_textarea{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.datetime > label{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.datetime > label:last-child{
+  margin-bottom: 0;;
+}
+
+.datetime >  label > input{
+  width: 100px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.head{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.body{
+  height: calc(100% - var(--line-height) - var(--margin) - var(--margin-top));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--margin-top);
+}
+
+.button_main{
+  border: 0px;
+  padding: 10px !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  width: 100%;
+  list-style-type: none;
+}
+
+.button_event{
+  margin: 0 auto !important;
+  font-size: 15px;
+  padding: 0 5px !important;
+  width: 171px;
+  background-color: #ffffff !important;
+  border: 0;
+}

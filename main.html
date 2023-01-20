@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>My tip</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <div class="logo_text">
+                <h2>my tip</h2>
+            </div>
+        </div>
+        <div class="header_buttons">
+            <div class="reg"><span onclick="modal = document.getElementById('modal_reg')
+                                            modal.style.opacity = 1
+                                            modal.style.visibility = 'visible'">регистрация</span></div>
+            <div class="enter"><span onclick="modal = document.getElementById('modal_enter')
+                                              modal.style.opacity = 1
+                                              modal.style.visibility = 'visible'">вход</span></div>
+        </div>
+    </header>
+    <main>
+        <div class="main_content">
+            <div class="container">
+                <div class="text">
+                    <h1>вместе с my tip:</h1>
+                    <ul class="big_text">
+                        <li>создавай свое уникальное расписание</li>
+                        <li>запоминай события</li>
+                        <li>записывай домашние задания</li>
+                        <li>загружай расписание университета</li>
+                        <li>проводи занятия продуктивно</li>
+                    </ul>
+                </div>
+                <div class="image"></div>
+            </div>
+            <div class="join_us">
+                <h1 class="join">присоединяйся к нам сейчас</h1>
+                <button class="button" onclick="modal = document.getElementById('modal_reg')
+                modal.style.opacity = 1
+                modal.style.visibility = 'visible'"><h2>регистрация</h2></button>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal modal_reg" id="modal_reg">
+        <div class="modal_reg_wrapper">
+            <header>
+                <div class="modal_header"><span class="modal_header_close" onclick="modal = document.getElementById('modal_reg') 
+                                               modal.style.opacity = 0
+                                               modal.style.visibility = 'hidden'">x</span></div>
+            </header>
+            <div class="modal_body">
+                <h2>регистрация</h2>
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" id="name" size="40" placeholder="имя">
+                    </div>
+                    <div class="field">
+                        <input type="text" id="surname" size="40" placeholder="фамилия">
+                    </div>
+                    <div class="field">
+                        <input type="text" id="fat_name" size="40" placeholder="отчество">
+                    </div>
+                    <div class="field">
+                        <input type="text" id="study" size="40" placeholder="учебное заведение">
+                    </div>
+                    <div class="field">
+                        <input type="text" id="login" size="40" placeholder="логин">
+                    </div>
+                    <div class="field">
+                        <input type="text" id="password" size="40" placeholder="пароль">
+                    </div>
+                </div>
+                <div class="button button_text" onclick="location.href='profile.html';">
+                    <span>зарегистрироваться</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal_enter" id="modal_enter">
+        <div class="modal_enter_wrapper">
+            <header>
+                <div class="modal_header"><span class="modal_header_close" onclick="modal = document.getElementById('modal_enter') 
+                                               modal.style.opacity = 0
+                                               modal.style.visibility = 'hidden'">x</span></div>
+            </header>
+            <div class="modal_body">
+                <h2>вход</h2>
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" id="login" size="40" placeholder="логин">
+                    </div>
+                    <div class="field">
+                        <input type="text" id="password" size="40" placeholder="пароль">
+                    </div>
+                </div>
+                <div class="button button_text" onclick="location.href='profile.html';">
+                    <span>войти</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

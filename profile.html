@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/profile.css">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <link rel="stylesheet" href="../src/styles/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <div class="logo_text">
+                <h2>my tip</h2>
+            </div>
+        </div>
+        <div class="header_buttons">
+
+            <ul class="first">
+                <li>
+                    <div class="menu"><h2>меню</h2></div>
+                    <ul class="submenu">
+                        <li><a href="profile.html"><div class="list">мой профиль</div></a></li>
+                        <li><a href="plans.html"><div class="list">мои планы</div></a></li>
+                        <li><a href="tasks.html"><div class="list">мои задачи</div></a></li>
+                        <li><a href="studying.html"><div class="list">моя учеба</div></a></li>
+                        <li><a href="timer.html"><div class="list">таймер</div></a></li>
+                        <li><a href="./main.html"><div class="list">выход</div></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="main_content">
+            <form action="http://localhost:3000" method="get">
+                <div class="my_profile">
+                    <h2>Мой профиль</h2>
+                    <div class="input_block">
+                        <div class="in"><span>Текущий логин </span><input type="text" name="login" id="name_handler" disabled value="Петя Петькин"></div>
+                        <div class="in"><span>Текущий пароль </span><input type="password" name="password" id="password_handler" disabled value="долбоебы"></div>
+                    </div>
+                    
+                </div>
+                <div class="change_data">
+                    <h2>Сменить данные</h2>
+                    <div class="input_block">
+                        <div class="in"><span>Текущий логин </span><input type="text" name="login" id="name_handler"></div>
+                        <div class="in"><span>Новый логин </span><input type="text" name="new_login" id="password_handler"></div>
+                    </div>
+                    <div class="input_block dif_input_block">
+                        <div class="in"><span>Текущий пароль </span><input type="password" name="password" id="name_handler"></div>
+                        <div class="in"><span>Новый пароль</span><input type="password" name="new_password" id="password_handler"></div>
+                    </div>
+                </div>
+                <input class="button" type="submit" value="сохранить изменения">
+            </form>
+            
+        </div>
+    </main>
+</body>
+
+</html>

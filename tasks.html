@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/tasks.css">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <link rel="stylesheet" href="../src/styles/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <div class="logo_text">
+                <h2>my tip</h2>
+            </div>
+        </div>
+        <div class="header_buttons">
+
+            <ul class="first">
+                <li>
+                    <div class="menu"><h2>меню</h2></div>
+                    <ul class="submenu">
+                        <li><a href="profile.html"><div class="list">мой профиль</div></a></li>
+                        <li><a href="plans.html"><div class="list">мои планы</div></a></li>
+                        <li><a href="tasks.html"><div class="list">мои задачи</div></a></li>
+                        <li><a href="studying.html"><div class="list">моя учеба</div></a></li>
+                        <li><a href="timer.html"><div class="list">таймер</div></a></li>
+                        <li><a href="./main.html"><div class="list">выход</div></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="main_content">
+            <h2>Мои задачи</h2>
+            <div class="tasks">
+                <div class="butt">
+                    <input type="button" value="new +" class="button" id="button" onclick="addListElement()">
+                </div>
+                <div class="tasks_table">
+                    <header class="table_head">
+                        <div class="list_element">
+                            <div class="checked">
+                                <input type="checkbox" name="checked" id="checked" value="false" disabled>
+                            </div>
+                            <div id="task" class="task"><span>Задача</span></div>
+                            <div id="date" class="date"><span>Срок</span></div>
+                            <div id="note" class="note"><span>Заметка</span></div>
+                            <div id="more" class="more"><span style="margin-left: 20px">+...</span></div>
+                        </div>
+                    </header>
+                    <div class="table_body" id="table_body">
+                        <ul id="table_ul" class="table_ul">
+                            <li>
+                                <form class="list_element">
+                                    <div class="checked">
+                                        <input type="checkbox" name="checked" id="checked">
+                                    </div>
+                                    <input type="text" name="task" id="task" class="task in" placeholder="Введите задачу">
+                                    <input type="date" name="date" id="date" class="date in" placeholder="Введите дату">
+                                    <input type="text" name="note" id="note" class="note in" placeholder="Краткое описание заметки">
+                                    <input type="text" name="more" id="more" class="more in" placeholder="Что-то еще?)">
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../src/scripts/tasks.js"></script>
+</body>
+
+</html>

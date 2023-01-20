@@ -1,0 +1,83 @@
+:root{
+    --input-task-width: 197px;
+    --input-check-width: 50px;
+    --input-note-width: 295px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+.table_head{
+    height: 50px !important;
+    width: 100%;
+    background-color: #ffffff !important;
+    cursor: default ;
+}
+
+.button {
+    border: 0px;
+    padding: 10px !important;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Montserrat';
+}
+
+.list_element{
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+.checked{
+    width: 50px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table_ul{
+    padding: 0;
+    margin: 0;
+}
+
+.task, .date{
+    width: var(--input-task-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note{
+    width: var(--input-note-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more{
+    width: calc(100% - var(--input-task-width) * 2 - var(--input-check-width) - var(--input-note-width));
+    display: flex;
+    align-items: center;
+}
+
+/* .in{
+    padding-left: 10px;
+} */
+
+.table_ul > li{
+    margin-bottom: 10px;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.butt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

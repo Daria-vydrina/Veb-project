@@ -1,0 +1,145 @@
+html {
+    cursor: default;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content {
+    margin: 80px 90px;
+}
+
+.image {
+    width: 543px;
+    height: 414px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.big_text {
+    padding-inline-start: 30px;
+}
+
+.big_text>li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 30px;
+}
+
+.big_text>li:last-child {
+    margin-bottom: 0;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+}
+
+.modal_reg_wrapper,
+.modal_enter_wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.modal_reg_wrapper {
+    width: 600px;
+    height: 900px;
+}
+
+.modal_enter_wrapper {
+    width: 600px;
+    height: 508px;
+}
+
+.modal_reg_wrapper>header,
+.modal_enter_wrapper>header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.modal_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_header>span {
+    cursor: pointer;
+    margin-right: 30px
+}
+
+.modal_body>h2 {
+    margin-bottom: 64px;
+}
+
+.modal_body>.fields {
+    margin-bottom: 50px;
+}
+
+.field {
+    margin-bottom: 30px;
+    outline: 0px;
+}
+
+.field>input {
+    width: 470px;
+    height: 70px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    outline: 0px;
+    border: 0px;
+    font-size: 15px;
+}
+
+.fields>.field:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    background-color: #E99CEB;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.join_us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join{
+    margin-top: 50px;
+}

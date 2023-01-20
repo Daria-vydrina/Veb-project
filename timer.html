@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/timer.css">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <link rel="stylesheet" href="../src/styles/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <div class="logo_text">
+                <h2>my tip</h2>
+            </div>
+        </div>
+        <div class="header_buttons">
+
+            <ul class="first">
+                <li>
+                    <div class="menu">
+                        <h2>меню</h2>
+                    </div>
+                    <ul class="submenu">
+                        <li>
+                            <a href="profile.html">
+                                <div class="list">мой профиль</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="plans.html">
+                                <div class="list">мои планы</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tasks.html">
+                                <div class="list">мои задачи</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="studying.html">
+                                <div class="list">моя учеба</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="timer.html">
+                                <div class="list">таймер</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./main.html">
+                                <div class="list">выход</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="main_content">
+            <h2>Таймер</h2>
+            <div class="timer_wrapper">
+                <div class="info_wrapper">
+                    <h2>формат:</h2>
+                    <form action="" id="timer_form" class="timer_form">
+                        <div class="form_field">
+                            <input type="radio" name="time" id="tw_min" onclick="modal = document.getElementById('form_field_under');
+                                                                                 modal.style.visibility = 'hidden'">
+                            <label for="tw_min">20 мин x 5 мин</label>
+                        </div>
+                        <div class="form_field">
+                            <input type="radio" name="time" id="th_min_five" onclick="modal = document.getElementById('form_field_under');
+                            modal.style.visibility = 'hidden'">
+                            <label for="th_min_five">30 мин x 5 мин</label>
+                        </div>
+                        <div class="form_field">
+                            <input type="radio" name="time" id="th_min_ten" onclick="modal = document.getElementById('form_field_under');
+                            modal.style.visibility = 'hidden'">
+                            <label for="th_min_ten">30 мин x 10 мин</label>
+                        </div>
+                        <div class="form_field">
+                            <input type="radio" name="time" id="four_min_five" onclick="modal = document.getElementById('form_field_under');
+                            modal.style.visibility = 'hidden'">
+                            <label for="four_min_five">40 мин x 5 мин</label>
+                        </div>
+                        <div class="form_field">
+                            <input type="radio" name="time" id="four_min_ten" onclick="modal = document.getElementById('form_field_under');
+                            modal.style.visibility = 'hidden'">
+                            <label for="four_min_ten">40 мин x 10 мин</label>
+                        </div>
+                        <div class="form_field">
+                            <input type="radio" name="time" id="my_format" onclick="modal = document.getElementById('form_field_under')
+                                                                                    modal.style.visibility = 'visible'">
+                            <label for="my_format">свой формат</label>
+                            <div class="form_field_under" id="form_field_under">
+                                <input type="time" name="minutes_of_work" id="minutes_of_work">
+                                <label for="minutes_of_work"> мин работы</label>
+                                <span> x <br/></span>
+                                <input type="time" name="minutes_of_rest" id="minutes_of_rest" class="minutes_of_rest">
+                                <label for="minutes_of_rest"> мин отдыха</label>
+                            </div>
+                        </div>
+                        <input type="submit" value="запустить" class="button">
+                    </form>
+                </div>
+                <div class="timer">
+                    <div id="app" class="app">
+                        <div class="time">
+                            <span class="work">20:00</span>
+                            <span class="rest">05:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
